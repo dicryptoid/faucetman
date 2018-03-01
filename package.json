@@ -1,0 +1,30 @@
+{
+	"name": "faucetman",
+	"version": "1.0.0",
+	"description": "Package running the \"Satoshi and Minions\" team for crawling public bitcoin faucets",
+	"main": "index.js",
+	"scripts": {
+		"debug": "env DEBUG=\"puppeteer:browser,puppeteer:target,puppeteer:page\" env DEBUG_COLORS=true node index.js",
+		"test": "node test/index.js"
+	},
+	"keywords": [
+		"Satoshi",
+		"bitcoin",
+		"faucets",
+		"scraping",
+		"automation"
+	],
+	"author": "Satoshi Tanaka <dicryptoid@gmail.com>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dicryptoid/faucetman.git"
+	},
+	"bugs": {
+		"url": "https://github.com/dicryptoid/faucetman/issues"
+	},
+	"dependencies": {
+		"puppeteer": "^1.1.1",
+		"url": "^0.11.0"
+	}
+}
