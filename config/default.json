@@ -1,0 +1,42 @@
+{
+	"app": {
+		"name": "FaucetMan",
+		"dirs": {
+			"cache": "cache/",
+			"screenshots": "cache/screenshots"
+		},
+		"useragent": {
+			"viewport": {
+				"width": 1980,
+				"height": 1024,
+				"deviceScaleFactor": 1,
+				"isMobile": false,
+				"hasTouch": false,
+				"isLandscape": false
+			}
+		}
+	},
+	"faucets": {
+		"GetFreeCoin": {
+			"urls": {
+				"home": "http://getfree.co.in/",
+				"faucet": "http://getfree.co.in/faucet",
+				"claim": "http://getfree.co.in/faucet#claimpop",
+				"withdrow": "http://getfree.co.in/faucet#wdfb"
+			},
+			"rewardTimeout": 600000,
+			"withdrowThreshold": 20
+		}
+	},
+	"tasks": [
+		{
+			"number": 1,
+			"name": "GetFreeCoin",
+			"actions": [
+				{
+					"navigate": "home"
+				}
+			]
+		}
+	]
+}
